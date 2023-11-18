@@ -54,9 +54,12 @@ const TaskList: React.FC<{ isCompleted: boolean }> = ({ isCompleted }) => {
                 <div
                     style={{
                         display: "flex",
+                        gap: "1rem",
                     }}
                 >
-                    <Button onClick={handleAddTask}>Add Task</Button>
+                    <Button colorScheme="cyan" onClick={handleAddTask}>
+                        Add Task
+                    </Button>
                     <Input ref={inputRef} placeholder="Description" />
                 </div>
                 <p

@@ -34,7 +34,12 @@ const Task = ({
             <CardBody>
                 <Text>{description}</Text>
             </CardBody>
-            <CardFooter>
+            <CardFooter
+                style={{
+                    display: "flex",
+                    gap: "1rem",
+                }}
+            >
                 <Button
                     hidden={isCompleted}
                     onClick={() =>
